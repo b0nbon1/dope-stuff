@@ -1,6 +1,9 @@
 #include <iostream>
+
+using std::cout;
+
 int main() //main func
 {
-    std::cout << "Hello world \n";
+    cout << "Hello world \n";
     return 0;
 }
