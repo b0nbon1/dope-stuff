@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
+#include <fstream>
 
 using std::cout;
 using std::cin;
@@ -31,6 +32,7 @@ void play_game ()
     // int guesses[250];
     vector<int> guesses;
     // int guess_count = 0;
+    int count = 0;
 
     int random = rand() % 251;
     cout << random << std::endl;
@@ -39,6 +41,8 @@ void play_game ()
     while(true) {
         int guess;
         cin >> guess;
+        count++;
+
         // guesses[guess_count++] = guess;
         guesses.push_back(guess);
         if (guess == random) {
@@ -52,6 +56,26 @@ void play_game ()
     }
 
     // print_array(guesses, guess_count);
+    // TODO:look up how to use ofstream to read and write files
+    std::ifstream input("bestscore.txt");
+    if(!input.is_open()) {
+        cout << "Unable to read file\n";
+        return;
+    }
+
+    int best_score;
+    input >> best_score;
+
+    std::ofstream output("bestscore.txt");
+    if(!output.is_open()) {
+        cout << "Unable to read file\n";
+        return;
+    }
+    if(count < best_score) {
+        output << count;
+    } else {
+        output << best_score;
+    }
     print_vector(guesses);
 }
 
