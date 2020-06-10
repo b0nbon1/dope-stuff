@@ -25,7 +25,7 @@ int main()
         cout << name << std::endl;
     }
 
-    get first char
+    // get first char
     char temp = file.get();
     std::cout << temp << "\n";
     std::string line;

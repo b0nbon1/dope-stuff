@@ -9,6 +9,30 @@ using std::cout;
 using std::cin;
 using std::vector;
 
+void save_score(int guess_count) {
+    // print_array(guesses, guess_count);
+    // TODO:look up how to use ofstream to read and write files
+    std::ifstream input("bestscore.txt");
+    if(!input.is_open()) {
+        cout << "Unable to read file\n";
+        return;
+    }
+
+    int best_score;
+    input >> best_score;
+
+    std::ofstream output("bestscore.txt");
+    if(!output.is_open()) {
+        cout << "Unable to read file\n";
+        return;
+    }
+    if(guess_count < best_score) {
+        output << guess_count;
+    } else {
+        output << best_score;
+    }
+}
+
 void print_array(int array[], int count)
 {
     for(int i = 0; i < count; i++) {
@@ -54,28 +78,7 @@ void play_game ()
             cout << "Too high \n";
         }
     }
-
-    // print_array(guesses, guess_count);
-    // TODO:look up how to use ofstream to read and write files
-    std::ifstream input("bestscore.txt");
-    if(!input.is_open()) {
-        cout << "Unable to read file\n";
-        return;
-    }
-
-    int best_score;
-    input >> best_score;
-
-    std::ofstream output("bestscore.txt");
-    if(!output.is_open()) {
-        cout << "Unable to read file\n";
-        return;
-    }
-    if(count < best_score) {
-        output << count;
-    } else {
-        output << best_score;
-    }
+    save_score(count);
     print_vector(guesses);
 }
 
