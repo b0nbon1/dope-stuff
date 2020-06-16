@@ -1,0 +1,53 @@
+#include <vector>
+#include <string>
+#include <iostream>
+
+ std::string operator*(std::string s, size_t count)
+    {
+      std::string ret;
+      for(size_t i = 0; i < count; ++i)
+      {
+          ret = ret + s;
+      }
+      return ret;
+    }
+
+class Kata
+{  
+  public:
+    
+    std::vector<std::string> towerBuilder(int nFloors)
+    {
+      std::vector<std::string> tower;
+      std::string strk = "*";
+      std::string spaced = " ";
+      for(int i = 1; i <= nFloors; i++)
+      {
+        std::cout << "checking in";
+        std::string flr = "";
+        size_t num_strk = i*2-1;
+        size_t num_space = (nFloors - num_strk)/2;
+        std::cout << num_space;
+        flr += spaced * num_space;
+        flr += strk * num_strk;
+        if(i != nFloors) flr += spaced * num_space; 
+        std::cout << flr << std::endl;
+        tower.push_back(flr);
+      }
+      return tower;
+    }
+};
+
+
+int main()
+{
+  std::string stuff = "*";
+  // std::string stuff(15-(6*2-1), '*');
+  // std::cout << stuff * 11 << std::endl;
+  Kata Tower;
+  std::vector<std::string> built = Tower.towerBuilder(3);
+  for(std::string x : built) {
+    std::cout << x << std::endl;
+  }
+  return 0;
+}
