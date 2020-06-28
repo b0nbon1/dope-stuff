@@ -45,7 +45,14 @@ class User
       std::cout << "Destructor \n";
       user_count--;
     }
+    friend void output_status(User user);
 };
+
+// friend function
+void output_status(User user)
+{
+  std::cout << user.status << std::endl;
+}
 
 int User::user_count = 0;
 
