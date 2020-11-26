@@ -1,5 +1,5 @@
 #include <iostream>
-#include "header.h"
+#include "header.hpp"
 
 double area(double length, double width)
 {
