@@ -77,7 +77,7 @@ void tree(int n)
 
 /*
    *************Tail recursion******************
-   when the recurse function is called as the last fun that's a tail recursion
+   when the recurse function is called as the last func that's a tail recursion
    example:
    void fun(int n)
    {
@@ -147,6 +147,8 @@ void tree(int n)
                                               1   func(0) func(0)
 
         outputs: 3,2,1,1,2,1,1
+  
+  *******************************Inderect recursion********************
                           
 */
 

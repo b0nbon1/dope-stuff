@@ -19,6 +19,7 @@ the data.
 
 `B` - Beginner, `A` - Advanced
 
+- [x] `B` [Dynamic Array](src/data-structures/dynamic-array)
 - [ ] `B` [Linked List](src/data-structures/linked-list)
 - [ ] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 - [ ] `B` [Queue](src/data-structures/queue)
