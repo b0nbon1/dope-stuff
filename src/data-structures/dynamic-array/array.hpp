@@ -55,6 +55,11 @@ public:
     insertAt(element, _size);
   }
 
+  void prepend(T element)
+  {
+    insertAt(element, 0);
+  }
+
   void deleteAt(int pos)
   {
     assert(0 <= pos && pos < _size);

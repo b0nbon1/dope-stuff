@@ -4,7 +4,18 @@
 TEST( Arrays, Test_append){
   Array<int> arr;
   arr.append(5);
-  EXPECT_EQ(arr[0], 5);
+  arr.append(6);
+  arr.append(7);
+  EXPECT_EQ(arr[2], 7);
+}
+
+TEST( Arrays, Test_prepend){
+  Array<int> arr;
+  arr.append(5);
+  arr.append(6);
+  arr.append(7);
+  arr.prepend(8);
+  EXPECT_EQ(arr[0], 8);
 }
 
 TEST( Arrays, Test_insertAt){
