@@ -50,7 +50,4 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-### CMake Patch ###
-# External projects
-*-prefix/
 

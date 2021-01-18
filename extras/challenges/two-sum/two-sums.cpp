@@ -62,8 +62,6 @@ public:
     }
 };
 
-// TODO: implement better solution
-
 int main() {
     Solution sol;
 
