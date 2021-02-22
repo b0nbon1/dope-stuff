@@ -1,6 +1,6 @@
-# C++ Algorithms and Data Structures
+# Java Algorithms and Data Structures
 
-This repository contains C++ based examples of many
+This repository contains Java based examples of many
 popular algorithms and data structures.
 
 Each algorithm and data structure has its own separate README
@@ -19,6 +19,7 @@ the data.
 
 `B` - Beginner, `A` - Advanced
 
+- [ ] `B` [Dynamic Array](src/data-structures/dynamic-array)
 - [ ] `B` [Linked List](src/data-structures/linked-list)
 - [ ] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 - [ ] `B` [Queue](src/data-structures/queue)
@@ -201,28 +202,13 @@ tree is being used.
 
 #### Prerequisites
 
-make sure you have the following:
 
-- googletest for cpp
-- g++
 
 **Build the code**
 
-```
-make clean
-```
-
-```
-make
-```
-
 
 **Run all tests**
-just run the built code
 
-```
-./build/algorithms
-```
 
 <!-- **Run tests by name**
 ```
