@@ -1,14 +1,20 @@
-# Java Algorithms and Data Structures
+# Python Algorithms and Data Structures
 
-This repository contains Java based examples of many
+[![Build Status](https://travis-ci.org/b0nbon1/algorithms-DS.svg?branch=main)](https://travis-ci.org/b0nbon1/algorithms-DS)
+
+This repository contains Python based examples of many
 popular algorithms and data structures.
 
 Each algorithm and data structure has its own separate README
 with related explanations and links for further reading (including ones
 to YouTube videos).
 
-*☝ Note that this project is meant to be used for learning and researching purposes 
-only and it is **not** meant to be used for production.*
+_☝ Note: that this project is meant to be used for learning and researching purposes
+only and it is **not** meant to be used for production._
+
+_☝ Note: Still work in progress_
+
+Marked data structures and algorithms means they've been implemented already
 
 ## Data Structures
 
@@ -19,8 +25,7 @@ the data.
 
 `B` - Beginner, `A` - Advanced
 
-- [ ] `B` [Dynamic Array](src/data-structures/dynamic-array)
-- [ ] `B` [Linked List](src/data-structures/linked-list)
+- [x] `B` [Linked List](src/data-structures/linked-list)
 - [ ] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 - [ ] `B` [Queue](src/data-structures/queue)
 - [ ] `B` [Stack](src/data-structures/stack)
@@ -47,9 +52,9 @@ a set of rules that precisely define a sequence of operations.
 
 ### Algorithms by Topic
 
-* **Math**
+- **Math**
   - [ ] `B` [Bit Manipulation](src/algorithms/math/bits) - set/get/update/clear bits, multiplication/division by two, make negative etc.
-  - [ ] `B` [Factorial](src/algorithms/math/factorial) 
+  - [ ] `B` [Factorial](src/algorithms/math/factorial)
   - [ ] `B` [Fibonacci Number](src/algorithms/math/fibonacci) - classic and closed-form versions
   - [ ] `B` [Primality Test](src/algorithms/math/primality-test) (trial division method)
   - [ ] `B` [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - calculate the Greatest Common Divisor (GCD)
@@ -63,8 +68,8 @@ a set of rules that precisely define a sequence of operations.
   - [ ] `A` [Integer Partition](src/algorithms/math/integer-partition)
   - [ ] `A` [Square Root](src/algorithms/math/square-root) - Newton's method
   - [ ] `A` [Liu Hui π Algorithm](src/algorithms/math/liu-hui) - approximate π calculations based on N-gons
-  - [ ] `A` [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - decompose a function of time (a signal) into the frequencies that make it up 
-* **Sets**
+  - [ ] `A` [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - decompose a function of time (a signal) into the frequencies that make it up
+- **Sets**
   - [ ] `B` [Cartesian Product](src/algorithms/sets/cartesian-product) - product of multiple sets
   - [ ] `B` [Fisher–Yates Shuffle](src/algorithms/sets/fisher-yates) - random permutation of a finite sequence
   - [ ] `A` [Power Set](src/algorithms/sets/power-set) - all subsets of a set (bitwise and backtracking solutions)
@@ -76,7 +81,7 @@ a set of rules that precisely define a sequence of operations.
   - [ ] `A` [Knapsack Problem](src/algorithms/sets/knapsack-problem) - "0/1" and "Unbound" ones
   - [ ] `A` [Maximum Subarray](src/algorithms/sets/maximum-subarray) - "Brute Force" and "Dynamic Programming" (Kadane's) versions
   - [ ] `A` [Combination Sum](src/algorithms/sets/combination-sum) - find all combinations that form specific sum
-* **Strings**
+- **Strings**
   - [ ] `B` [Hamming Distance](src/algorithms/string/hamming-distance) - number of positions at which the symbols are different
   - [ ] `A` [Levenshtein Distance](src/algorithms/string/levenshtein-distance) - minimum edit distance between two sequences
   - [ ] `A` [Knuth–Morris–Pratt Algorithm](src/algorithms/string/knuth-morris-pratt) (KMP Algorithm) - substring search (pattern matching)
@@ -84,12 +89,12 @@ a set of rules that precisely define a sequence of operations.
   - [ ] `A` [Rabin Karp Algorithm](src/algorithms/string/rabin-karp) - substring search
   - [ ] `A` [Longest Common Substring](src/algorithms/string/longest-common-substring)
   - [ ] `A` [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
-* **Searches**
-  - [ ] `B` [Linear Search](src/algorithms/search/linear-search)
+- **Searches**
+  - [x] `B` [Linear Search](src/algorithms/search/linear-search)
   - [ ] `B` [Jump Search](src/algorithms/search/jump-search) (or Block Search) - search in sorted array
   - [ ] `B` [Binary Search](src/algorithms/search/binary-search) - search in sorted array
   - [ ] `B` [Interpolation Search](src/algorithms/search/interpolation-search) - search in uniformly distributed sorted array
-* **Sorting**
+- **Sorting**
   - [ ] `B` [Bubble Sort](src/algorithms/sorting/bubble-sort)
   - [ ] `B` [Selection Sort](src/algorithms/sorting/selection-sort)
   - [ ] `B` [Insertion Sort](src/algorithms/sorting/insertion-sort)
@@ -99,13 +104,13 @@ a set of rules that precisely define a sequence of operations.
   - [ ] `B` [Shellsort](src/algorithms/sorting/shell-sort)
   - [ ] `B` [Counting Sort](src/algorithms/sorting/counting-sort)
   - [ ] `B` [Radix Sort](src/algorithms/sorting/radix-sort)
-* **Linked Lists**
+- **Linked Lists**
   - [ ] `B` [Straight Traversal](src/algorithms/linked-list/traversal)
   - [ ] `B` [Reverse Traversal](src/algorithms/linked-list/reverse-traversal)
-* **Trees**
+- **Trees**
   - [ ] `B` [Depth-First Search](src/algorithms/tree/depth-first-search) (DFS)
   - [ ] `B` [Breadth-First Search](src/algorithms/tree/breadth-first-search) (BFS)
-* **Graphs**
+- **Graphs**
   - [ ] `B` [Depth-First Search](src/algorithms/graph/depth-first-search) (DFS)
   - [ ] `B` [Breadth-First Search](src/algorithms/graph/breadth-first-search) (BFS)
   - [ ] `B` [Kruskal’s Algorithm](src/algorithms/graph/kruskal) - finding Minimum Spanning Tree (MST) for weighted undirected graph
@@ -121,13 +126,13 @@ a set of rules that precisely define a sequence of operations.
   - [ ] `A` [Hamiltonian Cycle](src/algorithms/graph/hamiltonian-cycle) - Visit every vertex exactly once
   - [ ] `A` [Strongly Connected Components](src/algorithms/graph/strongly-connected-components) - Kosaraju's algorithm
   - [ ] `A` [Travelling Salesman Problem](src/algorithms/graph/travelling-salesman) - shortest possible route that visits each city and returns to the origin city
-* **Cryptography**
+- **Cryptography**
   - [ ] `B` [Polynomial Hash](src/algorithms/cryptography/polynomial-hash) - rolling hash function based on polynomial
-* **Uncategorized**
+- **Uncategorized**
   - [ ] `B` [Tower of Hanoi](src/algorithms/uncategorized/hanoi-tower)
   - [ ] `B` [Square Matrix Rotation](src/algorithms/uncategorized/square-matrix-rotation) - in-place algorithm
-  - [ ] `B` [Jump Game](src/algorithms/uncategorized/jump-game) - backtracking, dynamic programming (top-down + bottom-up) and greedy examples 
-  - [ ] `B` [Unique Paths](src/algorithms/uncategorized/unique-paths) - backtracking, dynamic programming and Pascal's Triangle based examples 
+  - [ ] `B` [Jump Game](src/algorithms/uncategorized/jump-game) - backtracking, dynamic programming (top-down + bottom-up) and greedy examples
+  - [ ] `B` [Unique Paths](src/algorithms/uncategorized/unique-paths) - backtracking, dynamic programming and Pascal's Triangle based examples
   - [ ] `B` [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem (dynamic programming and brute force versions)
   - [ ] `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach to the top (4 solutions)
   - [ ] `A` [N-Queens Problem](src/algorithms/uncategorized/n-queens)
@@ -139,20 +144,20 @@ An algorithmic paradigm is a generic method or approach which underlies the desi
 of algorithms. It is an abstraction higher than the notion of an algorithm, just as an
 algorithm is an abstraction higher than a computer program.
 
-* **Brute Force** - look at all the possibilities and selects the best solution
+- **Brute Force** - look at all the possibilities and selects the best solution
   - [ ] `B` [Linear Search](src/algorithms/search/linear-search)
   - [ ] `B` [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem
   - [ ] `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach to the top
   - [ ] `A` [Maximum Subarray](src/algorithms/sets/maximum-subarray)
   - [ ] `A` [Travelling Salesman Problem](src/algorithms/graph/travelling-salesman) - shortest possible route that visits each city and returns to the origin city
   - [ ] `A` [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - decompose a function of time (a signal) into the frequencies that make it up
-* **Greedy** - choose the best option at the current time, without any consideration for the future
+- **Greedy** - choose the best option at the current time, without any consideration for the future
   - [ ] `B` [Jump Game](src/algorithms/uncategorized/jump-game)
   - [ ] `A` [Unbound Knapsack Problem](src/algorithms/sets/knapsack-problem)
   - [ ] `A` [Dijkstra Algorithm](src/algorithms/graph/dijkstra) - finding shortest path to all graph vertices
   - [ ] `A` [Prim’s Algorithm](src/algorithms/graph/prim) - finding Minimum Spanning Tree (MST) for weighted undirected graph
   - [ ] `A` [Kruskal’s Algorithm](src/algorithms/graph/kruskal) - finding Minimum Spanning Tree (MST) for weighted undirected graph
-* **Divide and Conquer** - divide the problem into smaller parts and then solve those parts
+- **Divide and Conquer** - divide the problem into smaller parts and then solve those parts
   - [ ] `B` [Binary Search](src/algorithms/search/binary-search)
   - [ ] `B` [Tower of Hanoi](src/algorithms/uncategorized/hanoi-tower)
   - [ ] `B` [Pascal's Triangle](src/algorithms/math/pascal-triangle)
@@ -165,7 +170,7 @@ algorithm is an abstraction higher than a computer program.
   - [ ] `B` [Fast Powering](src/algorithms/math/fast-powering)
   - [ ] `A` [Permutations](src/algorithms/sets/permutations) (with and without repetitions)
   - [ ] `A` [Combinations](src/algorithms/sets/combinations) (with and without repetitions)
-* **Dynamic Programming** - build up a solution using previously found sub-solutions
+- **Dynamic Programming** - build up a solution using previously found sub-solutions
   - [ ] `B` [Fibonacci Number](src/algorithms/math/fibonacci)
   - [ ] `B` [Jump Game](src/algorithms/uncategorized/jump-game)
   - [ ] `B` [Unique Paths](src/algorithms/uncategorized/unique-paths)
@@ -182,9 +187,9 @@ algorithm is an abstraction higher than a computer program.
   - [ ] `A` [Bellman-Ford Algorithm](src/algorithms/graph/bellman-ford) - finding shortest path to all graph vertices
   - [ ] `A` [Floyd-Warshall Algorithm](src/algorithms/graph/floyd-warshall) - find shortest paths between all pairs of vertices
   - [ ] `A` [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
-* **Backtracking** - similarly to brute force, try to generate all possible solutions, but each time you generate next solution you test
-if it satisfies all conditions, and only then continue generating subsequent solutions. Otherwise, backtrack, and go on a
-different path of finding a solution. Normally the DFS traversal of state-space is being used.
+- **Backtracking** - similarly to brute force, try to generate all possible solutions, but each time you generate next solution you test
+  if it satisfies all conditions, and only then continue generating subsequent solutions. Otherwise, backtrack, and go on a
+  different path of finding a solution. Normally the DFS traversal of state-space is being used.
   - [ ] `B` [Jump Game](src/algorithms/uncategorized/jump-game)
   - [ ] `B` [Unique Paths](src/algorithms/uncategorized/unique-paths)
   - [ ] `B` [Power Set](src/algorithms/sets/power-set) - all subsets of a set
@@ -192,39 +197,29 @@ different path of finding a solution. Normally the DFS traversal of state-space 
   - [ ] `A` [N-Queens Problem](src/algorithms/uncategorized/n-queens)
   - [ ] `A` [Knight's Tour](src/algorithms/uncategorized/knight-tour)
   - [ ] `A` [Combination Sum](src/algorithms/sets/combination-sum) - find all combinations that form specific sum
-* **Branch & Bound** - remember the lowest-cost solution found at each stage of the backtracking
-search, and use the cost of the lowest-cost solution found so far as a lower bound on the cost of
-a least-cost solution to the problem, in order to discard partial solutions with costs larger than the
-lowest-cost solution found so far. Normally BFS traversal in combination with DFS traversal of state-space
-tree is being used.
+- **Branch & Bound** - remember the lowest-cost solution found at each stage of the backtracking
+  search, and use the cost of the lowest-cost solution found so far as a lower bound on the cost of
+  a least-cost solution to the problem, in order to discard partial solutions with costs larger than the
+  lowest-cost solution found so far. Normally BFS traversal in combination with DFS traversal of state-space
+  tree is being used.
 
 ## How to use this repository
 
 #### Prerequisites
 
-
+- python3
+- pip3
+- virtualenv venv
 
 **Build the code**
 
+- install virtaulenv by `virtualenv venv`
+- activate virtualenv `.venv/bin/activate`
+- `pip3 install -r requirements.txt`
 
 **Run all tests**
 
-
-<!-- **Run tests by name**
-```
-npm test -- 'LinkedList'
-``` -->
-
-<!-- **Playground**
-
-You may play with data-structures and algorithms in `./src/playground/playground.js` file and write
-tests for it in `./src/playground/__test__/playground.test.js`.
-
-Then just simply run the following command to test if your playground code works as expected:
-
-```
-npm test -- 'playground'
-``` -->
+- use `pytest -v`
 
 ## Useful Information
 
@@ -234,7 +229,7 @@ npm test -- 'playground'
 
 ### Big O Notation
 
-*Big O notation* is used to classify algorithms according to how their running time or space requirements grow as the input size grows.
+_Big O notation_ is used to classify algorithms according to how their running time or space requirements grow as the input size grows.
 On the chart below you may find most common orders of growth of algorithms specified in Big O notation.
 
 ![Big O graphs](./extras/notes/images/log-data.png)
@@ -243,41 +238,41 @@ Source: [Big O Cheat Sheet](http://bigocheatsheet.com/).
 
 Below is the list of some of the most used Big O notations and their performance comparisons against different sizes of the input data.
 
-| Big O Notation | Computations for 10 elements | Computations for 100 elements | Computations for 1000 elements  |
-| -------------- | ---------------------------- | ----------------------------- | ------------------------------- |
-| **O(1)**       | 1                            | 1                             | 1                               |
-| **O(log N)**   | 3                            | 6                             | 9                               |
-| **O(N)**       | 10                           | 100                           | 1000                            |
-| **O(N log N)** | 30                           | 600                           | 9000                            |
-| **O(N^2)**     | 100                          | 10000                         | 1000000                         |
-| **O(2^N)**     | 1024                         | 1.26e+29                      | 1.07e+301                       |
-| **O(N!)**      | 3628800                      | 9.3e+157                      | 4.02e+2567                      |
+| Big O Notation | Computations for 10 elements | Computations for 100 elements | Computations for 1000 elements |
+| -------------- | ---------------------------- | ----------------------------- | ------------------------------ |
+| **O(1)**       | 1                            | 1                             | 1                              |
+| **O(log N)**   | 3                            | 6                             | 9                              |
+| **O(N)**       | 10                           | 100                           | 1000                           |
+| **O(N log N)** | 30                           | 600                           | 9000                           |
+| **O(N^2)**     | 100                          | 10000                         | 1000000                        |
+| **O(2^N)**     | 1024                         | 1.26e+29                      | 1.07e+301                      |
+| **O(N!)**      | 3628800                      | 9.3e+157                      | 4.02e+2567                     |
 
 ### Data Structure Operations Complexity
 
-| Data Structure          | Access    | Search    | Insertion | Deletion  | Comments  |
-| ----------------------- | :-------: | :-------: | :-------: | :-------: | :-------- |
-| **Array**               | 1         | n         | n         | n         |           |
-| **Stack**               | n         | n         | 1         | 1         |           |
-| **Queue**               | n         | n         | 1         | 1         |           |
-| **Linked List**         | n         | n         | 1         | n         |           |
-| **Hash Table**          | -         | n         | n         | n         | In case of perfect hash function costs would be O(1) |
-| **Binary Search Tree**  | n         | n         | n         | n         | In case of balanced tree costs would be O(log(n)) |
-| **B-Tree**              | log(n)    | log(n)    | log(n)    | log(n)    |           |
-| **Red-Black Tree**      | log(n)    | log(n)    | log(n)    | log(n)    |           |
-| **AVL Tree**            | log(n)    | log(n)    | log(n)    | log(n)    |           |
-| **Bloom Filter**        | -         | 1         | 1         | -         | False positives are possible while searching |
+| Data Structure         | Access | Search | Insertion | Deletion | Comments                                             |
+| ---------------------- | :----: | :----: | :-------: | :------: | :--------------------------------------------------- |
+| **Array**              |   1    |   n    |     n     |    n     |                                                      |
+| **Stack**              |   n    |   n    |     1     |    1     |                                                      |
+| **Queue**              |   n    |   n    |     1     |    1     |                                                      |
+| **Linked List**        |   n    |   n    |     1     |    n     |                                                      |
+| **Hash Table**         |   -    |   n    |     n     |    n     | In case of perfect hash function costs would be O(1) |
+| **Binary Search Tree** |   n    |   n    |     n     |    n     | In case of balanced tree costs would be O(log(n))    |
+| **B-Tree**             | log(n) | log(n) |  log(n)   |  log(n)  |                                                      |
+| **Red-Black Tree**     | log(n) | log(n) |  log(n)   |  log(n)  |                                                      |
+| **AVL Tree**           | log(n) | log(n) |  log(n)   |  log(n)  |                                                      |
+| **Bloom Filter**       |   -    |   1    |     1     |    -     | False positives are possible while searching         |
 
 ### Array Sorting Algorithms Complexity
 
-| Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
-| **Bubble sort**       | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Yes       |           |
-| **Insertion sort**    | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Yes       |           |
-| **Selection sort**    | n<sup>2</sup>   | n<sup>2</sup>       | n<sup>2</sup>       | 1         | No        |           |
-| **Heap sort**         | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | 1         | No        |           |
-| **Merge sort**        | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | n         | Yes       |           |
-| **Quick sort**        | n&nbsp;log(n)   | n&nbsp;log(n)       | n<sup>2</sup>       | log(n)    | No        | Quicksort is usually done in-place with O(log(n)) stack space |
-| **Shell sort**        | n&nbsp;log(n)   | depends on gap sequence   | n&nbsp;(log(n))<sup>2</sup>  | 1         | No         |           |
-| **Counting sort**     | n + r           | n + r               | n + r               | n + r     | Yes       | r - biggest number in array |
-| **Radix sort**        | n * k           | n * k               | n * k               | n + k     | Yes       | k - length of longest key |
+| Name               |     Best      |         Average         |            Worst            | Memory | Stable | Comments                                                      |
+| ------------------ | :-----------: | :---------------------: | :-------------------------: | :----: | :----: | :------------------------------------------------------------ |
+| **Bubble sort**    |       n       |      n<sup>2</sup>      |        n<sup>2</sup>        |   1    |  Yes   |                                                               |
+| **Insertion sort** |       n       |      n<sup>2</sup>      |        n<sup>2</sup>        |   1    |  Yes   |                                                               |
+| **Selection sort** | n<sup>2</sup> |      n<sup>2</sup>      |        n<sup>2</sup>        |   1    |   No   |                                                               |
+| **Heap sort**      | n&nbsp;log(n) |      n&nbsp;log(n)      |        n&nbsp;log(n)        |   1    |   No   |                                                               |
+| **Merge sort**     | n&nbsp;log(n) |      n&nbsp;log(n)      |        n&nbsp;log(n)        |   n    |  Yes   |                                                               |
+| **Quick sort**     | n&nbsp;log(n) |      n&nbsp;log(n)      |        n<sup>2</sup>        | log(n) |   No   | Quicksort is usually done in-place with O(log(n)) stack space |
+| **Shell sort**     | n&nbsp;log(n) | depends on gap sequence | n&nbsp;(log(n))<sup>2</sup> |   1    |   No   |                                                               |
+| **Counting sort**  |     n + r     |          n + r          |            n + r            | n + r  |  Yes   | r - biggest number in array                                   |
+| **Radix sort**     |    n \* k     |         n \* k          |           n \* k            | n + k  |  Yes   | k - length of longest key                                     |
