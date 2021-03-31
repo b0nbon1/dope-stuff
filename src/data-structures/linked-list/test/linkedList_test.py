@@ -5,7 +5,7 @@ from linked_list import LinkedList
 
 
 
-class TestLinearSearch(unittest.TestCase):
+class TestLinkedList(unittest.TestCase):
 
     def test_prepend(self):
         ll = LinkedList()
@@ -36,6 +36,12 @@ class TestLinearSearch(unittest.TestCase):
       ll.delete_at(2)
       self.assertEqual(ll.traverse(), '4->6->3->', "Should be index 4->6->3->")
     
+    def test_deleteEnd(self):
+      ll = LinkedList()
+      ll.insert_list([4,6,7,3])
+      ll.delete_end()
+      self.assertEqual(ll.traverse(), '4->6->7->', "Should be index 4->6->7->")
+    
     def test_deleteBy(self):
       ll = LinkedList()
       ll.insert_list([4,6,7,3])
@@ -56,6 +62,17 @@ class TestLinearSearch(unittest.TestCase):
       ll = LinkedList()
       ll.insert_list([4,6,7,3])
       self.assertEqual(ll.length(), 4, "Should be 4")
+    
+    def test_reverse(self):
+      ll = LinkedList()
+      ll.insert_list([4,6,7,3])
+      ll.reverse()
+      self.assertEqual(ll.traverse(), '3->7->6->4->', "Should be 3->7->6->4->")
+
+    def test_toList(self):
+      ll = LinkedList()
+      ll.insert_list([4,6,7,3])
+      self.assertEqual(ll.toList(), [4,6,7,3], "Should be equal to [4,6,7,3]")
 
 if __name__ == '__main__':
     unittest.main()

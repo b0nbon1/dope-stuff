@@ -57,6 +57,21 @@ class LinkedList:
             count += 1
         return True
     
+    def delete_end(self):
+        if self.head is None:
+            print("The list has no element to delete")
+            return False
+        if self.head.next is None:
+            self.head = None
+            return True
+        n = self.head
+        while n.next is not None:
+            if n.next.next is None:
+                n.next = None
+                break
+            n = n.next
+        return True
+    
     def delete_by(self, value):
         if self.head is None:
             return False
@@ -88,7 +103,30 @@ class LinkedList:
             itr = itr.next
         return check
 
-    # TODO: reverse linked_list
+    def reverse(self):
+        if self.head is None:
+            print("The list has no element to delete")
+            return
+        currNode = self.head
+        prevNode = None
+        nextNode = None
+
+        while currNode is not None:
+            nextNode = currNode.next
+            currNode.next = prevNode
+            prevNode = currNode
+            currNode = nextNode
+        self.head = prevNode
+    
+    def toList(self):
+        nodes = []
+
+        itr = self.head
+        while itr is not None:
+            nodes.append(itr.data)
+            itr = itr.next
+        
+        return nodes
 
     def length(self):
         count = 0
@@ -118,5 +156,8 @@ if __name__ == '__main__':
     ll.delete_at(7)
     ll.delete_by(50)
     print(ll.contains(50))
-    ll.traverse()
+    print(ll.traverse())
+    ll.reverse()
+    ll.delete_end()
+    print(ll.traverse())
     print(ll.length())

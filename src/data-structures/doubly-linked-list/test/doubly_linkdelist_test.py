@@ -5,7 +5,7 @@ from doubly_linkedlist import DoublyLinkedList
 
 
 
-class TestLinearSearch(unittest.TestCase):
+class TestDoublyLinkedList(unittest.TestCase):
 
     def test_prepend(self):
         dl = DoublyLinkedList()

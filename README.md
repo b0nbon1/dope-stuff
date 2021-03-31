@@ -26,7 +26,7 @@ the data.
 `B` - Beginner, `A` - Advanced
 
 - [x] `B` [Linked List](src/data-structures/linked-list)
-- [ ] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
+- [x] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 - [ ] `B` [Queue](src/data-structures/queue)
 - [ ] `B` [Stack](src/data-structures/stack)
 - [ ] `B` [Hash Table](src/data-structures/hash-table)
