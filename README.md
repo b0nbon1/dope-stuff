@@ -1,13 +1,7 @@
-# Python Algorithms and Data Structures
+# Rust Algorithms and Data Structures
 
-[![Build Status](https://travis-ci.org/b0nbon1/algorithms-DS.svg?branch=main)](https://travis-ci.org/b0nbon1/algorithms-DS)
-
-This repository contains Python based examples of many
+This repository contains Java based examples of many
 popular algorithms and data structures.
-
-Each algorithm and data structure has its own separate README
-with related explanations and links for further reading (including ones
-to YouTube videos).
 
 _☝ Note: that this project is meant to be used for learning and researching purposes
 only and it is **not** meant to be used for production._
@@ -25,8 +19,9 @@ the data.
 
 `B` - Beginner, `A` - Advanced
 
-- [x] `B` [Linked List](src/data-structures/linked-list)
-- [x] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
+- [] `B` [Arrays](src/data-structures/arrays)
+- [ ] `B` [Linked List](src/data-structures/linked-list)
+- [ ] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 - [ ] `B` [Queue](src/data-structures/queue)
 - [ ] `B` [Stack](src/data-structures/stack)
 - [ ] `B` [Hash Table](src/data-structures/hash-table)
@@ -202,24 +197,6 @@ algorithm is an abstraction higher than a computer program.
   a least-cost solution to the problem, in order to discard partial solutions with costs larger than the
   lowest-cost solution found so far. Normally BFS traversal in combination with DFS traversal of state-space
   tree is being used.
-
-## How to use this repository
-
-#### Prerequisites
-
-- python3
-- pip3
-- virtualenv venv
-
-**Build the code**
-
-- install virtaulenv by `virtualenv venv`
-- activate virtualenv `.venv/bin/activate`
-- `pip3 install -r requirements.txt`
-
-**Run all tests**
-
-- use `pytest -v`
 
 ## Useful Information
 
