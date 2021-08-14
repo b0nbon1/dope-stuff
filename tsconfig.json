@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+      "rootDir": "src",
+      "outDir": "bin",
+      "module": "ES6",
+      "noImplicitAny": false,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "target": "es5",
+      "skipLibCheck": true,
+      "lib": [
+          "es6",
+          "dom"
+      ],
+      "types": [],
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true
+  },
+  "exclude": [
+    "extras"
+  ]
+}

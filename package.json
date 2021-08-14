@@ -1,0 +1,26 @@
+{
+  "name": "algorithms-ds",
+  "version": "1.0.0",
+  "description": "This repository contains Typescript based examples of many popular algorithms and data structures.",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/challenges/add-two-numbers-ll.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b0nbon1/algorithms-DS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b0nbon1/algorithms-DS/issues"
+  },
+  "homepage": "https://github.com/b0nbon1/algorithms-DS#readme",
+  "dependencies": {
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.6.1"
+  }
+}
