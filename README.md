@@ -19,7 +19,7 @@ the data.
 
 `B` - Beginner, `A` - Advanced
 
-- [] `B` [Arrays](src/data-structures/arrays)
+- [ ] `B` [Arrays](src/data-structures/arrays)
 - [ ] `B` [Linked List](src/data-structures/linked-list)
 - [ ] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 - [ ] `B` [Queue](src/data-structures/queue)
