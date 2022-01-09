@@ -1,6 +1,6 @@
-# Java Algorithms and Data Structures
+# Python Algorithms and Data Structures
 
-This repository contains Java based examples of many
+This repository contains Python based examples of many
 popular algorithms and data structures.
 
 _☝ Note: that this project is meant to be used for learning and researching purposes
