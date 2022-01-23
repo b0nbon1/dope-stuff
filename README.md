@@ -22,8 +22,8 @@ the data.
 - [x] `B` [Arrays](src/data-structures/arrays)
 - [x] `B` [Linked List](src/data-structures/linked-list)
 - [x] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
-- [ ] `B` [Queue](src/data-structures/queue)
-- [ ] `B` [Stack](src/data-structures/stack)
+- [x] `B` [Queue](src/data-structures/queue)
+- [x] `B` [Stack](src/data-structures/stack)
 - [ ] `B` [Hash Table](src/data-structures/hash-table)
 - [ ] `B` [Heap](src/data-structures/heap) - max and min heap versions
 - [ ] `B` [Priority Queue](src/data-structures/priority-queue)
@@ -86,8 +86,8 @@ a set of rules that precisely define a sequence of operations.
   - [ ] `A` [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
 - **Searches**
   - [x] `B` [Linear Search](src/algorithms/search/linear-search)
-  - [ ] `B` [Jump Search](src/algorithms/search/jump-search) (or Block Search) - search in sorted array
-  - [ ] `B` [Binary Search](src/algorithms/search/binary-search) - search in sorted array
+  - [x] `B` [Jump Search](src/algorithms/search/jump-search) (or Block Search) - search in sorted array
+  - [x] `B` [Binary Search](src/algorithms/search/binary-search) - search in sorted array
   - [ ] `B` [Interpolation Search](src/algorithms/search/interpolation-search) - search in uniformly distributed sorted array
 - **Sorting**
   - [ ] `B` [Bubble Sort](src/algorithms/sorting/bubble-sort)
