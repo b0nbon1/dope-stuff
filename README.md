@@ -24,7 +24,7 @@ the data.
 - [x] `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 - [x] `B` [Queue](src/data-structures/queue)
 - [x] `B` [Stack](src/data-structures/stack)
-- [ ] `B` [Hash Table](src/data-structures/hash-table)
+- [x] `B` [Hash Map](src/data-structures/hash-map)
 - [ ] `B` [Heap](src/data-structures/heap) - max and min heap versions
 - [ ] `B` [Priority Queue](src/data-structures/priority-queue)
 - [ ] `A` [Trie](src/data-structures/trie)
