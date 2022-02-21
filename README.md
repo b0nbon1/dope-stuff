@@ -29,7 +29,7 @@ the data.
 - [ ] `B` [Priority Queue](src/data-structures/priority-queue)
 - [ ] `A` [Trie](src/data-structures/trie)
 - [ ] `A` [Tree](src/data-structures/tree)
-  - [ ] `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree)
+  - [x] `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree)
   - [ ] `A` [AVL Tree](src/data-structures/tree/avl-tree)
   - [ ] `A` [Red-Black Tree](src/data-structures/tree/red-black-tree)
   - [ ] `A` [Segment Tree](src/data-structures/tree/segment-tree) - with min/max/sum range queries examples
