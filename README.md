@@ -26,7 +26,7 @@ the data.
 - [x] `B` [Stack](src/data-structures/stack)
 - [x] `B` [Hash Map](src/data-structures/hash-map)
 - [x] `B` [Heap](src/data-structures/heap) - max and min heap versions
-- [ ] `B` [Priority Queue](src/data-structures/priority-queue)
+- [x] `B` [Priority Queue](src/data-structures/priority-queue)
 - [ ] `A` [Trie](src/data-structures/trie)
 - [ ] `A` [Tree](src/data-structures/tree)
   - [x] `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree)
