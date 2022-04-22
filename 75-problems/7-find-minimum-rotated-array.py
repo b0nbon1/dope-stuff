@@ -1,22 +1,16 @@
-def search(nums, target):
+def findMin(nums):
   low = 0
-  high = len(nums) - 1
-
+  high = len(nums)-1
+  track = nums[0]
   while low <= high:
-    mid = (low + high)//2
-    if target == nums[mid]:
-      return mid
-    if nums[low] <= nums[mid] or target < nums[low]:
-      if target > nums[mid]:
-        low = mid + 1
-      else:
-        high = mid - 1
+    mid = (low+high)//2
+    if nums[low] < nums[high]:
+      return min(track, nums[low])
+    track = min(track, nums[mid])
+    if nums[mid] >= nums[low]:
+      low = mid + 1
     else:
-      if target < nums[mid] or target > nums[high]:
-        high = mid - 1
-      else:
-        low = mid + 1
+      high = mid - 1
+  return track
 
-  return -1
-
-print(search([10,11,1,2,3,4], 11))
+print(findMin([3,4,5,1,2]))
