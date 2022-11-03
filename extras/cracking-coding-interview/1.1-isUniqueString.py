@@ -1,4 +1,4 @@
-# follow-up questions arre the characters ASCII or unicode
+# follow-up questions are the characters ASCII or unicode
 # without additional space
 # determine if string has unique characters
 

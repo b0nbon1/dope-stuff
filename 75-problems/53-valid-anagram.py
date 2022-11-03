@@ -1,7 +1,7 @@
 #O(nlogn)
 import collections
 
-# O(n) memory: O(1)
+# O(nlogn) memory: O(1)
 def isAnagram(self, s: str, t: str) -> bool:
   return sorted(s) == sorted(t)
 

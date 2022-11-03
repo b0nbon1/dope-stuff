@@ -14,7 +14,6 @@ def bfsTraversal(tree):
     result.append(current.val)
     if current.left: queue.append(current.left)
     if current.right: queue.append(current.right)
-    print(queue)
   return result
 
 

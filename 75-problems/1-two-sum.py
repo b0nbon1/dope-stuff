@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums, target):
         store = {}
         for i in range(len(nums)):
             diff = target - nums[i]
@@ -7,3 +7,4 @@ class Solution:
                 return [store[diff], i]
             else:
                 store[nums[i]] = i
+                

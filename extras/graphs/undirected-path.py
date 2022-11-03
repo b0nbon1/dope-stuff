@@ -51,11 +51,14 @@ def buildGraph(edges):
     graph[b].append(a)
   return graph
 
-edges = [
-  ["i","j"], 
-  ["k","i"],
-  ["m","k"],
-  ["k","l"], 
-  ["o","n"]
-]
-print(undirectPathBFS(edges, "j", "i"))
+# edges = [
+#   ["i","j"], 
+#   ["k","i"],
+#   ["m","k"],
+#   ["k","l"], 
+#   ["o","n"]
+# ]
+
+edges = [[2,1,1],[2,3,1],[3,4,1]]
+print(buildGraph(edges))
+# print(undirectPathBFS(edges, "j", "i"))
