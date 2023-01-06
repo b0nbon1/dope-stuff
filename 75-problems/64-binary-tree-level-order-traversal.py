@@ -23,4 +23,4 @@ class Solution:
           if current.left: queue.append(current.left)
           if current.right: queue.append(current.right)
         res.append(currentArr)
-      return res
+      return res 
