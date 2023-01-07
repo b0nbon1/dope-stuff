@@ -30,5 +30,7 @@ class Solution:
                 if s[l] in countT and window[s[l]] < countT[s[l]]:
                     have -= 1
                 l += 1
+
+
         l, r = res
         return s[l : r + 1] if resLen != float("inf") else ""
