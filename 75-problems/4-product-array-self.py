@@ -22,5 +22,3 @@ class Solution:
             post *= nums[i]
         
         return prodArr
-
-        [56, 56]
