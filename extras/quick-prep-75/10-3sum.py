@@ -9,7 +9,7 @@ class Solution:
         nums.sort()
         # loop through the nums
         for i, a in enumerate(nums):
-            # compare the nums, and ignore the duuplicates when picking the first number
+            # compare the nums, and ignore the duplicates when picking the first number
             if i > 0 and a == nums[i - 1]:
                 continue
             # since we already have the first number stored in a, we can use 2sum II to find the second and third
