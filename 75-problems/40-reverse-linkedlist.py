@@ -1,11 +1,13 @@
 def reverseList(head):
   prev, curr == None, head
   # T O(n), M O(1)
+  # 1 -> 2 -> 3 -> 4
+  # null <- 
   while curr:
-    nxt = curr.next
+    temp = curr.next
     curr.next = prev
     prev = curr
-    curr = nxt
+    curr = temp
   return prev
 
 #[1,2,4, Null]

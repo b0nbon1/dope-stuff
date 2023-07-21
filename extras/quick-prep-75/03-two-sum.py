@@ -14,3 +14,4 @@ class Solution:
                 return [prevMap[diff], i]
             # otherwise update the map with the current num and index as value
             prevMap[n] = i
+            

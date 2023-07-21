@@ -43,4 +43,4 @@ c.right = f
 #  / \     \
 # d   e     f
 
-print(depthFirstValuesRecurse(a)); 
+print(depthFirstValues(a)); 
