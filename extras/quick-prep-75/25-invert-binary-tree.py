@@ -10,7 +10,9 @@ class Solution:
         # base case, if not root stop here 
         if not root:
             return None
-        # switch the left node to go to the right and vice verse while inverting the tree
-        root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+        # swap the left node to go to the right and vice verse while inverting the tree
+        temp = root.left
+        root.left = self.invertTree(root.right)
+        root.right = self.invertTree(temp)
         # return root once done
         return root
