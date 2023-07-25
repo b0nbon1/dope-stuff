@@ -21,4 +21,40 @@ class Solution:
                 # checks and stores the longest streak
                 longest_seq = max(curr_seq, longest_seq)
         return longest_seq
-    
+
+
+class Solution2:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        # Edge case: empty input
+        if not nums:
+            return 0
+
+        # Initialize a set to store the elements in the input array
+        num_set = set(nums)
+        max_length = 1
+
+        while num_set:
+            # Take an arbitrary element from the set
+            num = num_set.pop()
+
+            # Initialize the length of the consecutive sequence starting from this element
+            length = 1
+
+            # Check for elements that come before this one
+            left = num - 1
+            while left in num_set:
+                num_set.remove(left)
+                left -= 1
+                length += 1
+
+            # Check for elements that come after this one
+            right = num + 1
+            while right in num_set:
+                num_set.remove(right)
+                right += 1
+                length += 1
+
+            # Update the maximum length if necessary
+            max_length = max(max_length, length)
+
+        return max_length

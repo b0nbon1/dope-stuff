@@ -1,0 +1,2 @@
+def longestSubstring():
+    pass

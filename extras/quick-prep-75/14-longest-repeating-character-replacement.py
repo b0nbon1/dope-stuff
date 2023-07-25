@@ -17,14 +17,14 @@ class Solution:
             # check if the the current current become the maxf and store how many they're
             maxf = max(maxf, count[s[r]])
             # size of the window
-            sizeWindow = r - l + 1
+            # sizeWindow = r - l + 1
             # before opt: if window is not valid, shift left pointer. to check validity use the size of the window minus the max frequent value
             # while sizeWindow - max(count.values()) > k:
             #   count[s[l]] -= 1
             #   l += 1
-            while sizeWindow - maxf > k:
+            while (r - l + 1) - maxf > k:
                 count[s[l]] -= 1
                 l += 1
             # compare size of the window with the current maximum substring length
-            res = max(res, sizeWindow)
+            res = max(res, r - l + 1)
         return res

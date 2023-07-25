@@ -2,6 +2,7 @@
 
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
+        # when 
         if t == "" and len(t) > len(s):
             return ""
 

@@ -25,9 +25,11 @@ class Solution:
 
     def decode(self, s):
         res, i = [], 0
-
+        # while still within the string
         while i < len(s):
+            # move j to i
             j = i
+            # check for the delimitor
             while s[j] != "#":
                 j += 1
             length = int(s[i:j])
