@@ -6,7 +6,7 @@ class Node:
         self.next = None
 
 class LRUCache:
-    def __init__(self, capacity):
+    def __init__(self, capacity = 10):
         self.capacity = capacity
         self.cache = {}
         self.head = Node(None, None)
@@ -18,8 +18,8 @@ class LRUCache:
         if key in self.cache:
             # Move the node to the front of the list
             node = self.cache[key]
-            self._remove(node)
-            self._add(node)
+            self.__remove(node)
+            self.__add(node)
             return node.value
         return -1
 
@@ -28,26 +28,26 @@ class LRUCache:
             # Update the value and move the node to the front of the list
             node = self.cache[key]
             node.value = value
-            self._remove(node)
-            self._add(node)
+            self.__remove(node)
+            self.__add(node)
         else:
             # Create a new node and addtail it to the front of the list
             node = Node(key, value)
-            self._add(node)
+            self.__add(node)
             self.cache[key] = node
             # If the cache is at capacity, remove the least recently used item
             if len(self.cache) > self.capacity:
                 del self.cache[self.tail.prev.key]
-                self._remove(self.tail.prev)
+                self.__remove(self.tail.prev)
 
-    def _add(self, node):
+    def __add(self, node):
         next_node = self.head.next
         self.head.next = node
         node.prev = self.head
         node.next = next_node
         next_node.prev = node
 
-    def _remove(self, node):
+    def __remove(self, node):
         prev_node = node.prev
         next_node = node.next
         prev_node.next = next_node
